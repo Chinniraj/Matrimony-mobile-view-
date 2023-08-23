@@ -1,0 +1,148 @@
+.outer-container {
+  width: 320px;
+  display: flex;
+  overflow: hidden;
+}
+
+.icon-container {
+  margin-top: 40px;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  background-color: #fff;
+  height: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.inner {
+  background-color: rgb(226, 223, 223);
+}
+.inner-container {
+  width: 100%;
+  background-color: #fff;
+  margin: 1px auto;
+}
+
+.horizontal-line {
+  height: 1px;
+  width: calc(100% - 50px);
+  background-color: #ccc;
+  margin: 0px auto;
+  margin-top: -10px;
+}
+
+.data-row h3 {
+  font-size: 13px;
+  color: grey;
+  font-weight: bold;
+  text-align: left;
+}
+.data-row h1 {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+}
+.data-row h2 {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+.image-container h1 {
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+}
+.data-row1 {
+  display: flex;
+  white-space: nowrap;
+  padding: 10px;
+}
+.image-container {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.data-row1 h1 {
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+.data-row1 h2 {
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.scroll-container {
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.person-card {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#person2 {
+  display: none;
+}
+/* .scroll-container {
+  display: flex;
+  overflow-x: auto;
+} */
+
+.person-card {
+  flex: 0 0 100%;
+  transition: flex 0.5s ease-in-out;
+}
+@media (min-width: 320px) and (max-width: 568px) {
+  .outer-container {
+    width: auto;
+  }
+}
+@media (min-width: 414px) and (max-width: 736px) {
+  .outer-container {
+    width: auto;
+  }
+}
+@media (min-width: 375px) and (max-width: 667px) {
+  .outer-container {
+    width: auto;
+  }
+}
+.scroll-container::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+}
